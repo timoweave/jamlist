@@ -1,0 +1,17 @@
+{
+  "name": "jamlist",
+  "description": "jamming list of chords, notes, melodies, strumming, keys, pickings, and songs (lyrics)",
+  "main": "index.js",
+  "authors": [
+    "Timothy Shiu <timoweave@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/timoweave/jamlist",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
