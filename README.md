@@ -1,15 +1,17 @@
 # Jam List 
 
-An app for participanting music hobbists: jamming solo/together from
-list of chords, notes, melodies, strumming, keys, pickings, and songs with lyrics.
+An app for hand-on music hobbists: jamming solo/together from
+a list of chords, notes, melodies, strumming, keys, pickings, and songs with lyrics.
 
 ## Introdution
 
-A responsive mobilve web app, which let a wild variety of music
-hobbists to jam songs together; make, edit, and share chords, songs,
-melodies, notes, lyrics, and build better music communities.
+A responsive mobile web app, which let a wide variety of music
+hobbists, especially guitar, ukulele, and mandolin, to jam songs on
+your own or with other hobbists together. The app should be easy to
+make, edit, and share chords, songs, melodies, notes, lyrics, and
+build better music communities. We wanna write, play, and sing songs!
 
-### priority
+### Priority
 
 1. Build a simple MEAN client/server app (HTML/JS) that list songs to jam.
    (probably use polymer web-component instead of angular)
