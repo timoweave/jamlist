@@ -1,49 +1,75 @@
-# Jam List 
+# Polymer App Toolbox - Drawer Template
 
-An app for hand-on music hobbists: jamming solo/together from
-a list of chords, notes, melodies, strumming, keys, pickings, and songs with lyrics.
+This template is a starting point for building apps using a drawer-based
+layout.  The layout is provided by `app-layout` elements.
 
-## Introdution
+This template, along with the `polymer-cli` toolchain, also demonstrates use
+of the "PRPL pattern" This pattern allows fast first delivery and interaction with
+the content at the initial route requested by the user, along with fast subsequent
+navigation by pre-caching the remaining components required by the app and
+progressively loading them on-demand as the user navigates through the app.
 
-A responsive mobile web app, which let a wide variety of music
-hobbists, especially guitar, ukulele, and mandolin, to jam songs on
-your own or with other hobbists together. The app should be easy to
-make, edit, and share chords, songs, melodies, notes, lyrics, and
-build better music communities. We wanna write, play, and sing songs!
+The PRPL pattern, in a nutshell:
 
-### Priority
+* **Push** components required for the initial route
+* **Render** initial route ASAP
+* **Pre-cache** components for remaining routes
+* **Lazy-load** and progressively upgrade next routes on-demand
 
-1. Build a simple MEAN client/server app (HTML/JS) that list songs to jam.
-   (probably use polymer web-component instead of angular)
-1. Create a simple Node/Express server.
-   (probably use polywer scaffold)
-1. Make sure the client/server are sending data between each other.
-   startout with json server, and migrate to mongo (mlab if time permit)
-1. landing page (song list)
-1. setting page (side-menu)
-1. song page (chord list along with fret, note, strumming, lyrics, chord)
-1. Optional: login page
-1. Make sure thanks pass some tests.
-1. Optional: Deploy to Heroku.
+### Setup
+
+##### Prerequisites
+
+Install [polymer-cli](https://github.com/Polymer/polymer-cli):
+
+    npm install -g polymer-cli
+
+##### Initialize project from template
+
+    mkdir my-app
+    cd my-app
+    polymer init app-drawer-template
+
+### Start the development server
+
+This command serves the app at `http://localhost:8080` and provides basic URL
+routing for the app:
+
+    polymer serve
 
 
-## Goals
+### Build
 
-- backend
-  - songs server, restful json (json-server, during development, before mlab kick in?)
-  - express + (live-server if dev)?
-  - json for writing song/music for all level of skill,
-    (how to specify chord, fret, lyric, bar, keys, struming, etc.,)
-  - heroku (hmmm don't think so for two days time frame)
-  
-- frontend
-  - using polymer web components, 
-  - es6, if possible (especially class extends)
-  - web components, app (side-menu, main-context, settings, and "bar")
-  - * web components for bar (like a music "measure") *, 
-    responsive (layout, grid), reconfigable (setting), 
+This command performs HTML, CSS, and JS minification on the application
+dependencies, and generates a service-worker.js file with code to pre-cache the
+dependencies based on the entrypoint and fragments specified in `polymer.json`.
+The minified files are output to the `build/unbundled` folder, and are suitable
+for serving from a HTTP/2+Push compatible server.
 
-- developement
-  - test mocha/chai spec
-  - task (grunt.... ?? not likely now)
-  - phatoms/selenium/webdriver (not likely???)
+In addition the command also creates a fallback `build/bundled` folder,
+generated using fragment bundling, suitable for serving from non
+H2/push-compatible servers or to clients that do not support H2/Push.
+
+    polymer build
+
+### Test the build
+
+This command serves the minified version of the app in an unbundled state, as it would
+be served by a push-compatible server:
+
+    polymer serve build/unbundled
+
+This command serves the minified version of the app generated using fragment bundling:
+
+    polymer serve build/bundled
+
+### Extend
+
+You can extend the app by adding more elements that will be demand-loaded
+e.g. based on the route, or to progressively render non-critical sections
+of the application.  Each new demand-loaded fragment should be added to the
+list of `fragments` in the included `polymer.json` file.  This will ensure
+those components and their dependencies are added to the list of pre-cached
+components (and will have bundles created in the fallback `bundled` build).
+
+

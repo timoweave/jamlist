@@ -4,14 +4,16 @@
   "description": "jamming list of chords, notes, melodies, strumming, keys, pickings, and songs (lyrics)",
   "main": "index.js",
   "scripts": {
+    "app" : "polymer serve",
+    "songs": "json-server --watch songs-database.json --port 3033",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/timoweave/jamlist.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["chords", "frets", "metronome", "songs", "lyrics", "strumming", "strings", "notes"],
+  "author": "Timothy Shiu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/timoweave/jamlist/issues"
@@ -21,6 +23,10 @@
     "chai": "^3.5.0",
     "express": "^4.14.0",
     "json-server": "^0.8.18",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "polymer-cli": "^0.14.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.7.0"
   }
 }
