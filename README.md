@@ -1,5 +1,5 @@
 
-# Jam List  \<jamlist\>
+# Bar List List  \<jamlist\>
 
 An app for hand-on music hobbists: jamming solo/together from
 a list of chords, notes, melodies, strumming, keys, pickings, and songs with lyrics.
@@ -14,18 +14,23 @@ build better music communities. We wanna write, play, and sing songs!
 
 ### Priority
 
-1. Build a simple MEAN client/server app (HTML/JS) that list songs to jam.
-   (probably use polymer web-component instead of angular)
-1. Create a simple Node/Express server.
-   (probably use polywer scaffold)
-1. Make sure the client/server are sending data between each other.
-   startout with json server, and migrate to mongo (mlab if time permit)
-1. landing page (song list)
-1. setting page (side-menu)
-1. song page (chord list along with fret, note, strumming, lyrics, chord)
-1. Optional: login page
-1. Make sure thanks pass some tests.
-1. Optional: Deploy to Heroku.
+- [X] Build a simple MEAN angular client app that talk to json-server and liver-server
+- [X] (did angular as backup, use polymer web-component, but not too familiar)
+- [x] Make sure the client/server are sending data between each other.
+- [x] start out with json server, defined json database, restful api.
+- [ ] Create a simple Node/Express server, integrating json-server and live-server(static).
+- [x] probably use polymer scaffold 
+
+- [X] landing page (song list)
+- [X] setting page (side-menu)
+- [X] song page (song detail)
+- [X] song detail element, that has fret, note, strumming, lyrics, chord 
+- [ ] need to wire/route up the interaction
+
+- [ ] Optional: migrate to mongo (mlab if time permit)
+- [ ] Optional: login page (passport if time permit)
+- [ ] Optional: Make sure thanks pass some tests.
+- [ ] Optional: Deploy to Heroku. 
 
 
 ## Goals

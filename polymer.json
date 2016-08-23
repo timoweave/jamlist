@@ -1,10 +1,11 @@
 {
-  "entrypoint": "index.html",
-  "shell": "src/jam-app.html",
-  "fragments": [
-    "src/jam-listing.html",
-    "src/jam-setting.html",
-    "src/jam-song.html",
-    "src/jam-user.html"
-  ]
+    "entrypoint": "index.html",
+    "shell": "src/jam-app.html",
+    "fragments": [
+        "src/jam-song-list.html",
+        "src/jam-play-list.html",
+        "src/jam-play-song.html",        
+        "src/jam-setting.html",
+        "src/jam-user.html"
+    ]
 }

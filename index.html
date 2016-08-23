@@ -15,7 +15,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="viewport"
         content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
-  <title>My App</title>
+  <title>Bar List</title>
 
   <link rel="shortcut icon"
         sizes="32x32"
@@ -29,7 +29,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script>
 
     // setup Polymer options
-    window.Polymer = {lazyRegister: true, dom: 'shadow'};
+    window.Polymer = {lazyRegister: true, dom: 'shady'};
 
     // load webcomponents polyfills
     (function() {
@@ -71,7 +71,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 </head>
 <body>
 
-  <jam-app></jam-app>
-
+    <jam-app></jam-app>
+    
+    <div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>    
+        <script src="index.js"></script>
+    </div>
 </body>
 </html>

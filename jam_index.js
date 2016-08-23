@@ -1,4 +1,5 @@
-var app = angular.module("jamApp", []);
+var app = angular.module("jamApp", ["ngRoute"]);
+app.config(routing);
 app.constant("config", {
   'songs_server': 'http://localhost:3033/'
 });
@@ -6,6 +7,21 @@ app.factory('songs', ["$http", "config", songs_factory]);
 app.controller("jamCtrl", ["$scope", "songs", jam_controller]);
 
 //////////////////////////////////////////
+function routing($routeProvider, $httpProvider) {
+  $routeProvider
+  .when('/song_list', {
+    templateUrl: 'jam_list.html',
+    controller: 'JamCtrl'
+  })
+  .when('/song_detail', {
+    templateUrl: 'jam_detail.html',
+    controller: 'JamCtrl'
+  })
+  .otherwise({
+    redirectTo: '/links'
+  });
+
+}
 
 function songs_factory($http, config) {
 
@@ -88,9 +104,14 @@ function jam_controller($scope, songs) {
     }
   }
 
-  $scope.select_click_song = function(event) {
-    var song = $(event.target);
-    $scope.song.one = JSON.parse(song.html());
+  $scope.select_click_song = function(event, index) {
+    // var song = $(event.target);
+    // $scope.song.one = JSON.parse(song.html());
+    console.log(index);
+    songs.get_one_song(index, function(result) {
+      console.log('result.data', result.data);
+      $scope.song.one = result.data;
+    })
   }
 
   $scope.hilite_click_bar = function(event) {

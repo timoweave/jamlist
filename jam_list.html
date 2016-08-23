@@ -1,0 +1,10 @@
+<div>
+    <h1>Songs List</h1>
+    <ul>
+        <li ng-repeat="song in song.all track by $index">
+            <a ng-click="select_click_song($event, $index)">
+                {{song.title}}
+            </a>
+        </li>
+    </ul>
+</div>

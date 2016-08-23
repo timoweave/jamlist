@@ -29,6 +29,9 @@
   },
   "homepage": "https://github.com/timoweave/jamlist#readme",
   "dependencies": {
+    "@polymer/iron-icons": "0.0.3",
+    "@polymer/paper-card": "0.0.3",
+    "@polymer/polymer": "^1.2.5-npm-test.2",
     "angular": "^1.5.8",
     "angular-route": "^1.5.8",
     "chai": "^3.5.0",

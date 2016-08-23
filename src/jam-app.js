@@ -1,9 +1,6 @@
 Polymer({
-
   is: 'jam-app',
-
   properties: {
-
     page: {
       type: String,
       reflectToAttribute: true,
@@ -16,7 +13,7 @@ Polymer({
   ],
 
   _routePageChanged: function(page) {
-    this.page = page || 'listing';
+    this.page = page || 'song-list';
   },
 
   _pageChanged: function(page) {

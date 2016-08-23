@@ -1,67 +1,80 @@
 <!--
-@license
-Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
--->
+    @license
+    Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+    This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+    The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+    The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+    Code distributed by Google as part of the polymer project is also
+    subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+  -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../bower_components/iron-form/iron-form.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+
 <dom-module id="jam-setting">
 
-  <template>
+    <template>
+        <style is="custom-style" include="iron-flex iron-flex-alignment">
+            :host {
+            display: block;
+            padding: 10px;
+            }
+            .card {
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            margin: 24px;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #757575;
+            }
+            .circle {
+            display: inline-block;
+            height: 64px;
+            width: 64px;
+            border-radius: 50%;
+            background: #ddd;
+            line-height: 64px;
+            font-size: 30px;
+            color: #555;
+            text-align: center;
+            }
+            h1 {
+            font-size: 22px;
+            margin: 16px 0;
+            color: #212121;
+            }
+        </style>
 
-    <style>
-      :host {
-        display: block;
-        padding: 10px;
-      }
-      .card {
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        padding: 16px;
-        margin: 24px;
-        border-radius: 5px;
-        background-color: #fff;
-        color: #757575;
-      }
-      .circle {
-        display: inline-block;
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-        background: #ddd;
-        line-height: 64px;
-        font-size: 30px;
-        color: #555;
-        text-align: center;
-      }
-      h1 {
-        font-size: 22px;
-        margin: 16px 0;
-        color: #212121;
-      }
-    </style>
-
-    <div class="card">
-      <div class="circle">2</div>
-      <h1>Settings</h1>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.</p>
-      <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
-    </div>
-
-  </template>
-
-  <script>
-
-    Polymer({
-
-      is: 'jam-setting'
-
-    });
-
-  </script>
-
+        
+        <div class="horizontal layout wrap" style="height:100%">
+            <div class="card flex">
+                <h2>Settings</h2>
+                <form is="iron-form" method="get" action="/" id="basic" class="vertical layout flex">
+                    <br/>
+                    <paper-checkbox class="flex" name="chord" value="chord" required>Show Chord Diagram</paper-checkbox>
+                    <br/>
+                    <paper-checkbox class="flex" name="tab" value="tab" required>Show Tab Music Sheet</paper-checkbox>
+                    <br/>
+                    <paper-checkbox class="flex" name="staff" value="staff" required>Show Staff Music Sheet</paper-checkbox>
+                    <br/>
+                    <paper-checkbox class="flex" name="lyrics" value="lyrics" required>Show Lyrics</paper-checkbox>
+                    <br/>
+                    <paper-checkbox class="flex" name="pattern" value="pattern" required>Show Strumming pattern</paper-checkbox>
+                    <br/>
+                    <paper-checkbox class="flex" name="number" value="number" required>Show Strumming number</paper-checkbox>
+                    <br/>
+                    <div class="flex"></div><paper-button raised>Save</paper-button>
+                </form>
+            </div>
+        </div>
+        
+    </template>
+    
+    <script src="jam-setting.js"></script>
+    
 </dom-module>

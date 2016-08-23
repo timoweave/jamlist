@@ -1,0 +1,15 @@
+<div>
+
+    <h1>Song Detail</h1>
+    <input type="number" ng-model="song_index" min="0" ng-change="get_one_song(song_index)"/>
+    <input type="button" value="play" ng-click="play_one_song()">
+
+    <h2 ng-if="song.one">{{song.one.title}}</h2>
+    <ul ng-if="song.one">
+        <li class="bar" ng-repeat="bar in song.one.bars track by $index">
+            <a ng-click="hilite_click_bar($event)">
+                {{bar}}
+            </a>
+        </li>
+    </ul>
+</div>

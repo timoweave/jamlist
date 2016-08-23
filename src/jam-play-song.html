@@ -9,8 +9,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/av-icons.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 
-<dom-module id="jam-song">
+<dom-module id="jam-play-song">
 
   <template>
 
@@ -43,17 +46,44 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         margin: 16px 0;
         color: #212121;
       }
+      .play {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0.5em 0em 0.5em 2em;
+      border-color: transparent transparent transparent #007bff;
+      }
+      .hilitebar {
+      background-color : lightblue !important;
+      }
     </style>
 
     <div class="card">
-      <div class="circle">3</div>
-      <h1>Song</h1>
-      <p>Modus commodo minimum eum te, vero utinam assueverit per eu.</p>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.Has at minim mucius aliquam, est id tempor laoreet.Pro saepe pertinax ei, ad pri animal labores suscipiantur.</p>
+        <h1><iron-icon icon="av:play-circle-outline"
+                       onclick="play_one_song();"></iron-icon>
+            {{song_body.title}}
+        </h1>
     </div>
 
+    <div class="horizontal layout wrap">
+        <template is="dom-repeat" items="{{song_body.bars}}">
+            <div class="card flex bar" id="bar-{{index}}" onclick="play_one_song({{index}})">
+                {{item}}
+            </div>
+        </template>
+    </div>
+    
   </template>
 
-  <script src="jam-song.js"></script>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>  
+  <script src="jam-play-song.js"></script>
 
 </dom-module>
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>  
+<script>
+    function play_song() {
+    console.log($(this));
+    console.log($('.bar'));
+    }
+</script>

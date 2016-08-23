@@ -1,5 +1,0 @@
-Polymer({
-  is: 'jam-song'
-  
-});
-

@@ -10,16 +10,11 @@
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
-<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
-<link rel="import" href="../bower_components/paper-card/paper-card.html">
-<link rel="import" href="../bower_components/paper-input/paper-input.html">
-<link rel="import" href="../bower_components/paper-button/paper-button.html">
-
-<dom-module id="jam-login">
+<dom-module id="jam-play-list">
 
     <template>
 
-        <style is="custom-style" include="iron-flex iron-flex-alignment">
+        <style>
             :host {
             display: block;
             padding: 10px;
@@ -50,20 +45,21 @@
             }
         </style>
 
-        <div class="horizontal layout wrap" style="height:100%">
-            <div class="card flex">
-            <form method="post" action="" class="vertical layout wrap">
-                <br style="height:4em;"/>
-                <paper-input name="username" label="username" required></paper-input>
-                <paper-input name="password" label="password" required></paper-input>
-                <br style="height:4em;"/>
-                <paper-button raised>Login</paper-button>
-            </form>
-            </div>
-        </div>
+        <div>
 
+            <div class="card">
+                <h1>Play List</h1>
+            </div>
+            
+            <template is="dom-repeat" items="{{song_list}}">
+                <div class="card">
+                    <h2>{{item.title}}, <small>{{item.artist}}</small></h2>
+                </div>
+            </template>
+
+        </div>
     </template>
 
-    <script src="jam-login.js"></script>
-
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="jam-play-list.js"></script>
 </dom-module>
