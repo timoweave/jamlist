@@ -1,149 +1,1361 @@
 {
-    "users" : [
-        {"id" : 0, 
-         "firstname" : "Merle", "lastname" : "Hines",
-         "username" : "merle", "email" : "merle123@gmail.com"
-        },
-        
-        {"id" : 1,
-         "firstname" : "Dominick", "lastname" :  "Schneider",
-         "username" : "dominick", "email" : "dominickABC@gmail.com"
-        },
-        
-        {"id" : 2,
-         "firstname" : "Jordan", "lastname" :  "Lambert",
-         "username" : "jordan", "email" : "lamber000@gmail.com"
-        },
-        
-        {"id" : 3,
-         "firstname" : "Harvey", "lastname" :  "Olson",
-         "username" : "harvey", "email" : "harvey999@gmail.com"
-        }
-    ],
-    
-    "artists" : [
-        {"id" : 0, "name" : "Ingrid Michaelson", "firstname" : "Ingrid", "lastname" : "Michaelson"
-        },
-        {"id" : 1, "name" : "Vance Joy", "firstname" : "Vance", "lastname" : "Joy"
-        },
-        {"id" : 2, "name" : "Jason Mraz", "firstname" : "Jason", "lastname" : "Mraz"
-        },
-        {"id" : 4, "name" : "Train", "firstname" : "", "lastname" : ""
-        }
-    ],
-
-    "songs" : [
-        { "id" : 0, "title" : "you and I", "artist" : "Ingrid Michaelson",
-          "timing" : "4/4", "metronome" : 120, "strings" : "GCEA", "strumming": "1 2& &4&",
-          "song" :  [ "Don't you worry, there my honey",
-                      "We might not have any money",
-                      "But we've got our love to pay the bills",
-                      "Maybe I think you're cute and funny",
-                      "Maybe I wanna do what bunnies do with you",
-                      "If you know what I mean",
-
-                      "Oh, let's get rich and buy our parents",
-                      "Homes in the South of France",
-                      "Let's get rich and give everybody nice sweaters",
-                      "And teach them how to dance",
-                      "Let's get rich and build our house on a mountain",
-                      "Making everybody look like ants",
-                      "From way up there, you and I, you and I"
-                    ]
-        },
-        {
-            "id" : 1, "title" : "Riptide", "artist" : "Vance Joy",
-            "timing" : "4/4", "metronome" : 120, "strings" : "GCEA", "strumming": "1 2& &4&",
-            "song" :  [ "I was scared of dentists and the dark",
-                        "I was scared of pretty girls and starting conversations",
-                        "Oh, all my friends are turning green",
-                        "You're the magician's assistant in their dream",
-                        "Oh, oh, and they come unstuck",
-                        "Lady, running down to the riptide",
-                        "Taken away to the dark side",
-                        "I wanna be your left hand man",
-                        "I love you when you're singing that song and",
-                        "I got a lump in my throat 'cause",
-                        "You're gonna sing the words wrong",
-                        "There's this movie that I think you'll like",
-                        "This guy decides to quit his job and heads to New York City",
-                        "This cowboy's running from himself",
-                        "And she's been living on the highest shelf",
-                        "Oh, oh, and they come unstuck"
-                      ]
-        },
-        {
-            "id" : 2, "title" : "I'm Yours", "artist" : "Jason Mraz", "keys" : "C",
-            "timing" : "4/4", "metronome" : 120, "strings" : "GCEA", "strumming": "1 2& &4&",
-            "song" : ["Well, [C]you done done me and you bet I felt it",
-                      "I [G]tried to be chill but your so hot that I melted",
-                      "I [Am]fell right through the cracks, now I'm [F]tryin to get back",
-                      "Before the [C]cool done run out I'll be givin it my bestest",
-                      "And [G]nothin's gonna stop me but divine intervention",
-                      "I [Am]reckon it's again my turn to [F]win some or learn some ",
-                      "I wont hesitate",
-                      "No more, no [Am]more",
-                      "It can not [F]wait. I'm yours",
-                      "[C][G][Am][F]"
-                     ]
-        },
-        {
-            "id" : 3, "title" : "Hey, Soul Sister", "artist" : "Train",
-            "timing" : "4/4", "metronome" : 120, "strings" : "GCEA", "strumming": "1 2& &4&",
-            "song" :  ["Hey-ay,",
-                       "Hey-ay-AY-ay-ay,",
-                       "Hey-ay-AY-ay-ay. Your",
-                       "Your lipstick stains on the front lobe of my left side brains",
-                       "I knew I wouldn't for-get you and so I went and",
-                       "let you blow my mind",
-                       "Your sweet moonbeam  the smell of you in every single dream I dream",
-                       "Your sweet moonbeam   the smell of you in every single dream I dream",
-                       "I knew when we collided you're the one",
-                       "I have decided who's one of my kind"
-                      ]
-        },
-        {
-            "id" : 4, "title" : "Hey, Soul Sister(2)", "artist" : "Train",
-            "timing" : "4/4", "metronome" : 120, "strings" : "GCEA", "strumming": "1 2& &4&",
-            "song" :  ["[E]Hey-[B]ay,",
-                       "[B]Hey-ay-AY-ay-ay,",
-                       "[Dbm]Hey-ay-AY-ay-[A]ay. Your",
-                       "Your [E]lipstick stains [B]on the front lobe of my [Dbm]left side brains[A]",
-                       "I knew I wouldn't for-[E]get you and so I went and",
-                       "[B]let you blow my [Dbm]mind[A][B]",
-                       "Your [E]sweet moonbeam  [B]the smell of you in every [Dbm]single dream I [A]dream",
-                       "Your [E]sweet moonbeam   [B]the smell of you in every [Dbm]single dream I [A]dream",
-                       "I knew when we col[E]lided you're the one",
-                       "I have de[B]cided who's one of my [Dbm]kind[A][B]"
-                      ]
-        },
-        {
-            "id" : 5, "title" : "Hey, Soul Sister(3)", "artist" : "Train",
-            "timing" : "4/4", "metronome" : 120, "strings" : "GCEA", "strumming": "1 2& &4&",
-            "song" :  ["[E]Hey-[B]ay,",
-                       "[B]Hey-ay-AY-ay-ay,",
-                       "[Dbm]Hey-ay-AY-ay-[A]ay.",
-                       "Your [E]lipstick stains",
-                       "[B]on the front lobe of my ",
-                       "[Dbm]left side brains",
-                       "[A]",
-                       "I knew I wouldn't for-",
-                       "[E]get you and so I went and",
-                       "[B]let you blow my",
-                       "[Dbm]mind[A][B]",
-                       "Your [E]sweet moonbeam",
-                       "[B]the smell of you in every",
-                       "[Dbm]single dream I",
-                       "[A]dream. Your",
-                       "[E]sweet moonbeam",
-                       "[B]the smell of you in every",
-                       "[Dbm]single dream I",
-                       "[A]dream. I knew when we col-",
-                       "[E]lided you're the one",
-                       "I have de[B]cided who's one of my",
-                       "[Dbm]kind[A][B]"
-                      ]
-        }
-    ]
-    
+  "chords": [
+    {
+      "id": "A",
+      "img": "images/chords/Amaj.png"
+    },
+    {
+      "id": "Amaj",
+      "img": "images/chords/Amaj.png"
+    },
+    {
+      "id": "Amin",
+      "img": "images/chords/Amin.png"
+    },
+    {
+      "id": "Aaug",
+      "img": "images/chords/Aaug.png"
+    },
+    {
+      "id": "Adim7",
+      "img": "images/chords/Adim7.png"
+    },
+    {
+      "id": "A7",
+      "img": "images/chords/A7.png"
+    },
+    {
+      "id": "Amaj7",
+      "img": "images/chords/Amaj7.png"
+    },
+    {
+      "id": "Amin7",
+      "img": "images/chords/Amin7.png"
+    },
+    {
+      "id": "Asus2",
+      "img": "images/chords/Asus2.png"
+    },
+    {
+      "id": "Asus4",
+      "img": "images/chords/Asus4.png"
+    },
+    {
+      "id": "A7sus2",
+      "img": "images/chords/A7sus2.png"
+    },
+    {
+      "id": "A7sus4",
+      "img": "images/chords/A7sus4.png"
+    },
+    {
+      "id": "A9",
+      "img": "images/chords/A9.png"
+    },
+    {
+      "id": "Am9",
+      "img": "images/chords/Am9.png"
+    },
+    {
+      "id": "A6",
+      "img": "images/chords/A6.png"
+    },
+    {
+      "id": "Am6",
+      "img": "images/chords/Am6.png"
+    },
+    {
+      "id": "A7+5",
+      "img": "images/chords/A7+5.png"
+    },
+    {
+      "id": "A7b5",
+      "img": "images/chords/A7b5.png"
+    },
+    {
+      "id": "Am7b5",
+      "img": "images/chords/Am7b5.png"
+    },
+    {
+      "id": "B",
+      "img": "images/chords/Bmaj.png"
+    },
+    {
+      "id": "Bmaj",
+      "img": "images/chords/Bmaj.png"
+    },
+    {
+      "id": "Bmin",
+      "img": "images/chords/Bmin.png"
+    },
+    {
+      "id": "Baug",
+      "img": "images/chords/Baug.png"
+    },
+    {
+      "id": "Bdim7",
+      "img": "images/chords/Bdim7.png"
+    },
+    {
+      "id": "B7",
+      "img": "images/chords/B7.png"
+    },
+    {
+      "id": "Bmaj7",
+      "img": "images/chords/Bmaj7.png"
+    },
+    {
+      "id": "Bmin7",
+      "img": "images/chords/Bmin7.png"
+    },
+    {
+      "id": "Bsus2",
+      "img": "images/chords/Bsus2.png"
+    },
+    {
+      "id": "Bsus4",
+      "img": "images/chords/Bsus4.png"
+    },
+    {
+      "id": "B7sus2",
+      "img": "images/chords/B7sus2.png"
+    },
+    {
+      "id": "B7sus4",
+      "img": "images/chords/B7sus4.png"
+    },
+    {
+      "id": "B9",
+      "img": "images/chords/B9.png"
+    },
+    {
+      "id": "Bm9",
+      "img": "images/chords/Bm9.png"
+    },
+    {
+      "id": "B6",
+      "img": "images/chords/B6.png"
+    },
+    {
+      "id": "Bm6",
+      "img": "images/chords/Bm6.png"
+    },
+    {
+      "id": "B7+5",
+      "img": "images/chords/B7+5.png"
+    },
+    {
+      "id": "B7b5",
+      "img": "images/chords/B7b5.png"
+    },
+    {
+      "id": "Bm7b5",
+      "img": "images/chords/Bm7b5.png"
+    },
+    {
+      "id": "C",
+      "img": "images/chords/Cmaj.png"
+    },
+    {
+      "id": "Cmaj",
+      "img": "images/chords/Cmaj.png"
+    },
+    {
+      "id": "Cmin",
+      "img": "images/chords/Cmin.png"
+    },
+    {
+      "id": "Caug",
+      "img": "images/chords/Caug.png"
+    },
+    {
+      "id": "Cdim7",
+      "img": "images/chords/Cdim7.png"
+    },
+    {
+      "id": "C7",
+      "img": "images/chords/C7.png"
+    },
+    {
+      "id": "Cmaj7",
+      "img": "images/chords/Cmaj7.png"
+    },
+    {
+      "id": "Cmin7",
+      "img": "images/chords/Cmin7.png"
+    },
+    {
+      "id": "Csus2",
+      "img": "images/chords/Csus2.png"
+    },
+    {
+      "id": "Csus4",
+      "img": "images/chords/Csus4.png"
+    },
+    {
+      "id": "C7sus2",
+      "img": "images/chords/C7sus2.png"
+    },
+    {
+      "id": "C7sus4",
+      "img": "images/chords/C7sus4.png"
+    },
+    {
+      "id": "C9",
+      "img": "images/chords/C9.png"
+    },
+    {
+      "id": "Cm9",
+      "img": "images/chords/Cm9.png"
+    },
+    {
+      "id": "C6",
+      "img": "images/chords/C6.png"
+    },
+    {
+      "id": "Cm6",
+      "img": "images/chords/Cm6.png"
+    },
+    {
+      "id": "C7+5",
+      "img": "images/chords/C7+5.png"
+    },
+    {
+      "id": "C7b5",
+      "img": "images/chords/C7b5.png"
+    },
+    {
+      "id": "Cm7b5",
+      "img": "images/chords/Cm7b5.png"
+    },
+    {
+      "id": "D",
+      "img": "images/chords/Dmaj.png"
+    },
+    {
+      "id": "Dmaj",
+      "img": "images/chords/Dmaj.png"
+    },
+    {
+      "id": "Dmin",
+      "img": "images/chords/Dmin.png"
+    },
+    {
+      "id": "Daug",
+      "img": "images/chords/Daug.png"
+    },
+    {
+      "id": "Ddim7",
+      "img": "images/chords/Ddim7.png"
+    },
+    {
+      "id": "D7",
+      "img": "images/chords/D7.png"
+    },
+    {
+      "id": "Dmaj7",
+      "img": "images/chords/Dmaj7.png"
+    },
+    {
+      "id": "Dmin7",
+      "img": "images/chords/Dmin7.png"
+    },
+    {
+      "id": "Dsus2",
+      "img": "images/chords/Dsus2.png"
+    },
+    {
+      "id": "Dsus4",
+      "img": "images/chords/Dsus4.png"
+    },
+    {
+      "id": "D7sus2",
+      "img": "images/chords/D7sus2.png"
+    },
+    {
+      "id": "D7sus4",
+      "img": "images/chords/D7sus4.png"
+    },
+    {
+      "id": "D9",
+      "img": "images/chords/D9.png"
+    },
+    {
+      "id": "Dm9",
+      "img": "images/chords/Dm9.png"
+    },
+    {
+      "id": "D6",
+      "img": "images/chords/D6.png"
+    },
+    {
+      "id": "Dm6",
+      "img": "images/chords/Dm6.png"
+    },
+    {
+      "id": "D7+5",
+      "img": "images/chords/D7+5.png"
+    },
+    {
+      "id": "D7b5",
+      "img": "images/chords/D7b5.png"
+    },
+    {
+      "id": "Dm7b5",
+      "img": "images/chords/Dm7b5.png"
+    },
+    {
+      "id": "E",
+      "img": "images/chords/Emaj.png"
+    },
+    {
+      "id": "Emaj",
+      "img": "images/chords/Emaj.png"
+    },
+    {
+      "id": "Emin",
+      "img": "images/chords/Emin.png"
+    },
+    {
+      "id": "Eaug",
+      "img": "images/chords/Eaug.png"
+    },
+    {
+      "id": "Edim7",
+      "img": "images/chords/Edim7.png"
+    },
+    {
+      "id": "E7",
+      "img": "images/chords/E7.png"
+    },
+    {
+      "id": "Emaj7",
+      "img": "images/chords/Emaj7.png"
+    },
+    {
+      "id": "Emin7",
+      "img": "images/chords/Emin7.png"
+    },
+    {
+      "id": "Esus2",
+      "img": "images/chords/Esus2.png"
+    },
+    {
+      "id": "Esus4",
+      "img": "images/chords/Esus4.png"
+    },
+    {
+      "id": "E7sus2",
+      "img": "images/chords/E7sus2.png"
+    },
+    {
+      "id": "E7sus4",
+      "img": "images/chords/E7sus4.png"
+    },
+    {
+      "id": "E9",
+      "img": "images/chords/E9.png"
+    },
+    {
+      "id": "Em9",
+      "img": "images/chords/Em9.png"
+    },
+    {
+      "id": "E6",
+      "img": "images/chords/E6.png"
+    },
+    {
+      "id": "Em6",
+      "img": "images/chords/Em6.png"
+    },
+    {
+      "id": "E7+5",
+      "img": "images/chords/E7+5.png"
+    },
+    {
+      "id": "E7b5",
+      "img": "images/chords/E7b5.png"
+    },
+    {
+      "id": "Em7b5",
+      "img": "images/chords/Em7b5.png"
+    },
+    {
+      "id": "F",
+      "img": "images/chords/Fmaj.png"
+    },
+    {
+      "id": "Fmaj",
+      "img": "images/chords/Fmaj.png"
+    },
+    {
+      "id": "Fmin",
+      "img": "images/chords/Fmin.png"
+    },
+    {
+      "id": "Faug",
+      "img": "images/chords/Faug.png"
+    },
+    {
+      "id": "Fdim7",
+      "img": "images/chords/Fdim7.png"
+    },
+    {
+      "id": "F7",
+      "img": "images/chords/F7.png"
+    },
+    {
+      "id": "Fmaj7",
+      "img": "images/chords/Fmaj7.png"
+    },
+    {
+      "id": "Fmin7",
+      "img": "images/chords/Fmin7.png"
+    },
+    {
+      "id": "Fsus2",
+      "img": "images/chords/Fsus2.png"
+    },
+    {
+      "id": "Fsus4",
+      "img": "images/chords/Fsus4.png"
+    },
+    {
+      "id": "F7sus2",
+      "img": "images/chords/F7sus2.png"
+    },
+    {
+      "id": "F7sus4",
+      "img": "images/chords/F7sus4.png"
+    },
+    {
+      "id": "F9",
+      "img": "images/chords/F9.png"
+    },
+    {
+      "id": "Fm9",
+      "img": "images/chords/Fm9.png"
+    },
+    {
+      "id": "F6",
+      "img": "images/chords/F6.png"
+    },
+    {
+      "id": "Fm6",
+      "img": "images/chords/Fm6.png"
+    },
+    {
+      "id": "F7+5",
+      "img": "images/chords/F7+5.png"
+    },
+    {
+      "id": "F7b5",
+      "img": "images/chords/F7b5.png"
+    },
+    {
+      "id": "Fm7b5",
+      "img": "images/chords/Fm7b5.png"
+    },
+    {
+      "id": "G",
+      "img": "images/chords/Gmaj.png"
+    },
+    {
+      "id": "Gmaj",
+      "img": "images/chords/Gmaj.png"
+    },
+    {
+      "id": "Gmin",
+      "img": "images/chords/Gmin.png"
+    },
+    {
+      "id": "Gaug",
+      "img": "images/chords/Gaug.png"
+    },
+    {
+      "id": "Gdim7",
+      "img": "images/chords/Gdim7.png"
+    },
+    {
+      "id": "G7",
+      "img": "images/chords/G7.png"
+    },
+    {
+      "id": "Gmaj7",
+      "img": "images/chords/Gmaj7.png"
+    },
+    {
+      "id": "Gmin7",
+      "img": "images/chords/Gmin7.png"
+    },
+    {
+      "id": "Gsus2",
+      "img": "images/chords/Gsus2.png"
+    },
+    {
+      "id": "Gsus4",
+      "img": "images/chords/Gsus4.png"
+    },
+    {
+      "id": "G7sus2",
+      "img": "images/chords/G7sus2.png"
+    },
+    {
+      "id": "G7sus4",
+      "img": "images/chords/G7sus4.png"
+    },
+    {
+      "id": "G9",
+      "img": "images/chords/G9.png"
+    },
+    {
+      "id": "Gm9",
+      "img": "images/chords/Gm9.png"
+    },
+    {
+      "id": "G6",
+      "img": "images/chords/G6.png"
+    },
+    {
+      "id": "Gm6",
+      "img": "images/chords/Gm6.png"
+    },
+    {
+      "id": "G7+5",
+      "img": "images/chords/G7+5.png"
+    },
+    {
+      "id": "G7b5",
+      "img": "images/chords/G7b5.png"
+    },
+    {
+      "id": "Gm7b5",
+      "img": "images/chords/Gm7b5.png"
+    },
+    {
+      "id": "A#",
+      "img": "images/chords/A#maj.png"
+    },
+    {
+      "id": "A#maj",
+      "img": "images/chords/A#maj.png"
+    },
+    {
+      "id": "A#min",
+      "img": "images/chords/A#min.png"
+    },
+    {
+      "id": "A#aug",
+      "img": "images/chords/A#aug.png"
+    },
+    {
+      "id": "A#dim7",
+      "img": "images/chords/A#dim7.png"
+    },
+    {
+      "id": "A#7",
+      "img": "images/chords/A#7.png"
+    },
+    {
+      "id": "A#maj7",
+      "img": "images/chords/A#maj7.png"
+    },
+    {
+      "id": "A#min7",
+      "img": "images/chords/A#min7.png"
+    },
+    {
+      "id": "A#sus2",
+      "img": "images/chords/A#sus2.png"
+    },
+    {
+      "id": "A#sus4",
+      "img": "images/chords/A#sus4.png"
+    },
+    {
+      "id": "A#7sus2",
+      "img": "images/chords/A#7sus2.png"
+    },
+    {
+      "id": "A#7sus4",
+      "img": "images/chords/A#7sus4.png"
+    },
+    {
+      "id": "A#9",
+      "img": "images/chords/A#9.png"
+    },
+    {
+      "id": "A#m9",
+      "img": "images/chords/A#m9.png"
+    },
+    {
+      "id": "A#6",
+      "img": "images/chords/A#6.png"
+    },
+    {
+      "id": "A#m6",
+      "img": "images/chords/A#m6.png"
+    },
+    {
+      "id": "A#7+5",
+      "img": "images/chords/A#7+5.png"
+    },
+    {
+      "id": "A#7b5",
+      "img": "images/chords/A#7b5.png"
+    },
+    {
+      "id": "A#m7b5",
+      "img": "images/chords/A#m7b5.png"
+    },
+    {
+      "id": "B#",
+      "img": "images/chords/B#maj.png"
+    },
+    {
+      "id": "B#maj",
+      "img": "images/chords/B#maj.png"
+    },
+    {
+      "id": "B#min",
+      "img": "images/chords/B#min.png"
+    },
+    {
+      "id": "B#aug",
+      "img": "images/chords/B#aug.png"
+    },
+    {
+      "id": "B#dim7",
+      "img": "images/chords/B#dim7.png"
+    },
+    {
+      "id": "B#7",
+      "img": "images/chords/B#7.png"
+    },
+    {
+      "id": "B#maj7",
+      "img": "images/chords/B#maj7.png"
+    },
+    {
+      "id": "B#min7",
+      "img": "images/chords/B#min7.png"
+    },
+    {
+      "id": "B#sus2",
+      "img": "images/chords/B#sus2.png"
+    },
+    {
+      "id": "B#sus4",
+      "img": "images/chords/B#sus4.png"
+    },
+    {
+      "id": "B#7sus2",
+      "img": "images/chords/B#7sus2.png"
+    },
+    {
+      "id": "B#7sus4",
+      "img": "images/chords/B#7sus4.png"
+    },
+    {
+      "id": "B#9",
+      "img": "images/chords/B#9.png"
+    },
+    {
+      "id": "B#m9",
+      "img": "images/chords/B#m9.png"
+    },
+    {
+      "id": "B#6",
+      "img": "images/chords/B#6.png"
+    },
+    {
+      "id": "B#m6",
+      "img": "images/chords/B#m6.png"
+    },
+    {
+      "id": "B#7+5",
+      "img": "images/chords/B#7+5.png"
+    },
+    {
+      "id": "B#7b5",
+      "img": "images/chords/B#7b5.png"
+    },
+    {
+      "id": "B#m7b5",
+      "img": "images/chords/B#m7b5.png"
+    },
+    {
+      "id": "C#",
+      "img": "images/chords/C#maj.png"
+    },
+    {
+      "id": "C#maj",
+      "img": "images/chords/C#maj.png"
+    },
+    {
+      "id": "C#min",
+      "img": "images/chords/C#min.png"
+    },
+    {
+      "id": "C#aug",
+      "img": "images/chords/C#aug.png"
+    },
+    {
+      "id": "C#dim7",
+      "img": "images/chords/C#dim7.png"
+    },
+    {
+      "id": "C#7",
+      "img": "images/chords/C#7.png"
+    },
+    {
+      "id": "C#maj7",
+      "img": "images/chords/C#maj7.png"
+    },
+    {
+      "id": "C#min7",
+      "img": "images/chords/C#min7.png"
+    },
+    {
+      "id": "C#sus2",
+      "img": "images/chords/C#sus2.png"
+    },
+    {
+      "id": "C#sus4",
+      "img": "images/chords/C#sus4.png"
+    },
+    {
+      "id": "C#7sus2",
+      "img": "images/chords/C#7sus2.png"
+    },
+    {
+      "id": "C#7sus4",
+      "img": "images/chords/C#7sus4.png"
+    },
+    {
+      "id": "C#9",
+      "img": "images/chords/C#9.png"
+    },
+    {
+      "id": "C#m9",
+      "img": "images/chords/C#m9.png"
+    },
+    {
+      "id": "C#6",
+      "img": "images/chords/C#6.png"
+    },
+    {
+      "id": "C#m6",
+      "img": "images/chords/C#m6.png"
+    },
+    {
+      "id": "C#7+5",
+      "img": "images/chords/C#7+5.png"
+    },
+    {
+      "id": "C#7b5",
+      "img": "images/chords/C#7b5.png"
+    },
+    {
+      "id": "C#m7b5",
+      "img": "images/chords/C#m7b5.png"
+    },
+    {
+      "id": "D#",
+      "img": "images/chords/D#maj.png"
+    },
+    {
+      "id": "D#maj",
+      "img": "images/chords/D#maj.png"
+    },
+    {
+      "id": "D#min",
+      "img": "images/chords/D#min.png"
+    },
+    {
+      "id": "D#aug",
+      "img": "images/chords/D#aug.png"
+    },
+    {
+      "id": "D#dim7",
+      "img": "images/chords/D#dim7.png"
+    },
+    {
+      "id": "D#7",
+      "img": "images/chords/D#7.png"
+    },
+    {
+      "id": "D#maj7",
+      "img": "images/chords/D#maj7.png"
+    },
+    {
+      "id": "D#min7",
+      "img": "images/chords/D#min7.png"
+    },
+    {
+      "id": "D#sus2",
+      "img": "images/chords/D#sus2.png"
+    },
+    {
+      "id": "D#sus4",
+      "img": "images/chords/D#sus4.png"
+    },
+    {
+      "id": "D#7sus2",
+      "img": "images/chords/D#7sus2.png"
+    },
+    {
+      "id": "D#7sus4",
+      "img": "images/chords/D#7sus4.png"
+    },
+    {
+      "id": "D#9",
+      "img": "images/chords/D#9.png"
+    },
+    {
+      "id": "D#m9",
+      "img": "images/chords/D#m9.png"
+    },
+    {
+      "id": "D#6",
+      "img": "images/chords/D#6.png"
+    },
+    {
+      "id": "D#m6",
+      "img": "images/chords/D#m6.png"
+    },
+    {
+      "id": "D#7+5",
+      "img": "images/chords/D#7+5.png"
+    },
+    {
+      "id": "D#7b5",
+      "img": "images/chords/D#7b5.png"
+    },
+    {
+      "id": "D#m7b5",
+      "img": "images/chords/D#m7b5.png"
+    },
+    {
+      "id": "E#",
+      "img": "images/chords/E#maj.png"
+    },
+    {
+      "id": "E#maj",
+      "img": "images/chords/E#maj.png"
+    },
+    {
+      "id": "E#min",
+      "img": "images/chords/E#min.png"
+    },
+    {
+      "id": "E#aug",
+      "img": "images/chords/E#aug.png"
+    },
+    {
+      "id": "E#dim7",
+      "img": "images/chords/E#dim7.png"
+    },
+    {
+      "id": "E#7",
+      "img": "images/chords/E#7.png"
+    },
+    {
+      "id": "E#maj7",
+      "img": "images/chords/E#maj7.png"
+    },
+    {
+      "id": "E#min7",
+      "img": "images/chords/E#min7.png"
+    },
+    {
+      "id": "E#sus2",
+      "img": "images/chords/E#sus2.png"
+    },
+    {
+      "id": "E#sus4",
+      "img": "images/chords/E#sus4.png"
+    },
+    {
+      "id": "E#7sus2",
+      "img": "images/chords/E#7sus2.png"
+    },
+    {
+      "id": "E#7sus4",
+      "img": "images/chords/E#7sus4.png"
+    },
+    {
+      "id": "E#9",
+      "img": "images/chords/E#9.png"
+    },
+    {
+      "id": "E#m9",
+      "img": "images/chords/E#m9.png"
+    },
+    {
+      "id": "E#6",
+      "img": "images/chords/E#6.png"
+    },
+    {
+      "id": "E#m6",
+      "img": "images/chords/E#m6.png"
+    },
+    {
+      "id": "E#7+5",
+      "img": "images/chords/E#7+5.png"
+    },
+    {
+      "id": "E#7b5",
+      "img": "images/chords/E#7b5.png"
+    },
+    {
+      "id": "E#m7b5",
+      "img": "images/chords/E#m7b5.png"
+    },
+    {
+      "id": "F#",
+      "img": "images/chords/F#maj.png"
+    },
+    {
+      "id": "F#maj",
+      "img": "images/chords/F#maj.png"
+    },
+    {
+      "id": "F#min",
+      "img": "images/chords/F#min.png"
+    },
+    {
+      "id": "F#aug",
+      "img": "images/chords/F#aug.png"
+    },
+    {
+      "id": "F#dim7",
+      "img": "images/chords/F#dim7.png"
+    },
+    {
+      "id": "F#7",
+      "img": "images/chords/F#7.png"
+    },
+    {
+      "id": "F#maj7",
+      "img": "images/chords/F#maj7.png"
+    },
+    {
+      "id": "F#min7",
+      "img": "images/chords/F#min7.png"
+    },
+    {
+      "id": "F#sus2",
+      "img": "images/chords/F#sus2.png"
+    },
+    {
+      "id": "F#sus4",
+      "img": "images/chords/F#sus4.png"
+    },
+    {
+      "id": "F#7sus2",
+      "img": "images/chords/F#7sus2.png"
+    },
+    {
+      "id": "F#7sus4",
+      "img": "images/chords/F#7sus4.png"
+    },
+    {
+      "id": "F#9",
+      "img": "images/chords/F#9.png"
+    },
+    {
+      "id": "F#m9",
+      "img": "images/chords/F#m9.png"
+    },
+    {
+      "id": "F#6",
+      "img": "images/chords/F#6.png"
+    },
+    {
+      "id": "F#m6",
+      "img": "images/chords/F#m6.png"
+    },
+    {
+      "id": "F#7+5",
+      "img": "images/chords/F#7+5.png"
+    },
+    {
+      "id": "F#7b5",
+      "img": "images/chords/F#7b5.png"
+    },
+    {
+      "id": "F#m7b5",
+      "img": "images/chords/F#m7b5.png"
+    },
+    {
+      "id": "G#",
+      "img": "images/chords/G#maj.png"
+    },
+    {
+      "id": "G#maj",
+      "img": "images/chords/G#maj.png"
+    },
+    {
+      "id": "G#min",
+      "img": "images/chords/G#min.png"
+    },
+    {
+      "id": "G#aug",
+      "img": "images/chords/G#aug.png"
+    },
+    {
+      "id": "G#dim7",
+      "img": "images/chords/G#dim7.png"
+    },
+    {
+      "id": "G#7",
+      "img": "images/chords/G#7.png"
+    },
+    {
+      "id": "G#maj7",
+      "img": "images/chords/G#maj7.png"
+    },
+    {
+      "id": "G#min7",
+      "img": "images/chords/G#min7.png"
+    },
+    {
+      "id": "G#sus2",
+      "img": "images/chords/G#sus2.png"
+    },
+    {
+      "id": "G#sus4",
+      "img": "images/chords/G#sus4.png"
+    },
+    {
+      "id": "G#7sus2",
+      "img": "images/chords/G#7sus2.png"
+    },
+    {
+      "id": "G#7sus4",
+      "img": "images/chords/G#7sus4.png"
+    },
+    {
+      "id": "G#9",
+      "img": "images/chords/G#9.png"
+    },
+    {
+      "id": "G#m9",
+      "img": "images/chords/G#m9.png"
+    },
+    {
+      "id": "G#6",
+      "img": "images/chords/G#6.png"
+    },
+    {
+      "id": "G#m6",
+      "img": "images/chords/G#m6.png"
+    },
+    {
+      "id": "G#7+5",
+      "img": "images/chords/G#7+5.png"
+    },
+    {
+      "id": "G#7b5",
+      "img": "images/chords/G#7b5.png"
+    },
+    {
+      "id": "G#m7b5",
+      "img": "images/chords/G#m7b5.png"
+    }
+  ],
+  "users": [
+    {
+      "id": 0,
+      "firstname": "Merle",
+      "lastname": "Hines",
+      "username": "merle",
+      "email": "merle123@gmail.com"
+    },
+    {
+      "id": 1,
+      "firstname": "Dominick",
+      "lastname": "Schneider",
+      "username": "dominick",
+      "email": "dominickABC@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstname": "Jordan",
+      "lastname": "Lambert",
+      "username": "jordan",
+      "email": "lamber000@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstname": "Harvey",
+      "lastname": "Olson",
+      "username": "harvey",
+      "email": "harvey999@gmail.com"
+    },
+    {
+      "username": "phoebe",
+      "id": 4
+    }
+  ],
+  "artists": [
+    {
+      "id": 0,
+      "name": "Ingrid Michaelson",
+      "firstname": "Ingrid",
+      "lastname": "Michaelson"
+    },
+    {
+      "id": 1,
+      "name": "Vance Joy",
+      "firstname": "Vance",
+      "lastname": "Joy"
+    },
+    {
+      "id": 2,
+      "name": "Jason Mraz",
+      "firstname": "Jason",
+      "lastname": "Mraz"
+    },
+    {
+      "id": 4,
+      "name": "Train",
+      "firstname": "",
+      "lastname": ""
+    },
+    {
+      "firstname": "phoebe",
+      "lastname": "maio",
+      "name": "silly cat",
+      "id": 5
+    }
+  ],
+  "songs": [
+    {
+      "id": 0,
+      "title": "you and I",
+      "artist": "Ingrid Michaelson",
+      "timing": "4/4",
+      "bps": 120,
+      "strings": "GCEA",
+      "strumming": "1 2& &4&",
+      "bars": [
+        "Don't you worry, there my honey",
+        "We might not have any money",
+        "But we've got our love to pay the bills",
+        "Maybe I think you're cute and funny",
+        "Maybe I wanna do what bunnies do with you",
+        "If you know what I mean",
+        "Oh, let's get rich and buy our parents",
+        "Homes in the South of France",
+        "Let's get rich and give everybody nice sweaters",
+        "And teach them how to dance",
+        "Let's get rich and build our house on a mountain",
+        "Making everybody look like ants",
+        "From way up there, you and I, you and I"
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Riptide",
+      "artist": "Vance Joy",
+      "timing": "4/4",
+      "bps": 120,
+      "strings": "GCEA",
+      "strumming": "1 2& &4&",
+      "bars": [
+        "I was scared of dentists and the dark",
+        "I was scared of pretty girls and starting conversations",
+        "Oh, all my friends are turning green",
+        "You're the magician's assistant in their dream",
+        "Oh, oh, and they come unstuck",
+        "Lady, running down to the riptide",
+        "Taken away to the dark side",
+        "I wanna be your left hand man",
+        "I love you when you're singing that song and",
+        "I got a lump in my throat 'cause",
+        "You're gonna sing the words wrong",
+        "There's this movie that I think you'll like",
+        "This guy decides to quit his job and heads to New York City",
+        "This cowboy's running from himself",
+        "And she's been living on the highest shelf",
+        "Oh, oh, and they come unstuck"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "I'm Yours",
+      "artist": "Jason Mraz",
+      "keys": "C",
+      "timing": "4/4",
+      "bps": 120,
+      "strings": "GCEA",
+      "strumming": "1 2& &4&",
+      "bars": [
+        "Well, [C]you done done me and you bet I felt it",
+        "I [G]tried to be chill but your so hot that I melted",
+        "I [Am]fell right through the cracks, now I'm [F]tryin to get back",
+        "Before the [C]cool done run out I'll be givin it my bestest",
+        "And [G]nothin's gonna stop me but divine intervention",
+        "I [Am]reckon it's again my turn to [F]win some or learn some ",
+        "I wont hesitate",
+        "No more, no [Am]more",
+        "It can not [F]wait. I'm yours",
+        "[C][G][Am][F]"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Hey, Soul Sister",
+      "artist": "Train",
+      "timing": "4/4",
+      "bps": 120,
+      "strings": "GCEA",
+      "strumming": "1 2& &4&",
+      "bars": [
+        "Hey-ay,",
+        "Hey-ay-AY-ay-ay,",
+        "Hey-ay-AY-ay-ay.",
+        "Your lipstick stains on the front lobe of my left side brains",
+        "I knew I wouldn't for-get you and so I went and",
+        "let you blow my mind",
+        "Your sweet moonbeam the smell of you in every single dream I dream",
+        "Your sweet moonbeam the smell of you in every single dream I dream",
+        "I knew when we collided you're the one",
+        "I have decided who's one of my kind"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Hey, Soul Sister(chords+lyrics+strumming)",
+      "artist": "Train",
+      "timing": "4/4",
+      "bps": 120,
+      "strings": "GCEA",
+      "strumming": "1 2& &4&",
+      "bars": [
+        "[E]Hey-[B]ay,",
+        "[B]Hey-ay-AY-ay-ay,",
+        "[Dbm]Hey-ay-AY-ay-[A]ay. Your",
+        "Your [E]lipstick stains [B]on the front lobe of my [Dbm]left side brains[A]",
+        "I knew I wouldn't for-[E]get you and so I went and",
+        "[B]let you blow my [Dbm]mind[A][B]",
+        "Your [E]sweet moonbeam  [B]the smell of you in every [Dbm]single dream I [A]dream",
+        "Your [E]sweet moonbeam   [B]the smell of you in every [Dbm]single dream I [A]dream",
+        "I knew when we col[E]lided you're the one",
+        "I have de[B]cided who's one of my [Dbm]kind[A][B]"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Hey, Soul Sister(chords+lyrics)",
+      "artist": "Train",
+      "timing": "4/4",
+      "bps": 120,
+      "strings": "GCEA",
+      "strumming": "1 2& &4&",
+      "bars": [
+        "[E]Hey-",
+        "[B]ay,",
+        "[B]Hey-ay-AY-ay-ay,",
+        "[Dbm]Hey-ay-AY-ay-[A]ay.",
+        "Your [E]lipstick stains",
+        "[B]on the front lobe of my ",
+        "[Dbm]left side brains",
+        "[A]",
+        "I knew I wouldn't for-",
+        "[E]get you and so I went and",
+        "[B]let you blow my",
+        "[Dbm]mind[A][B]",
+        "Your [E]sweet moonbeam",
+        "[B]the smell of you in every",
+        "[Dbm]single dream I",
+        "[A]dream. Your",
+        "[E]sweet moonbeam",
+        "[B]the smell of you in every",
+        "[Dbm]single dream I",
+        "[A]dream. I knew when we col-",
+        "[E]lided you're the one",
+        "I have de[B]cided who's one of my",
+        "[Dbm]kind[A][B]"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Hey, Soul Sister(chords)",
+      "artist": "Train",
+      "timing": "4/4",
+      "bps": 10,
+      "strings": "GCEA",
+      "strumming": "1 2& &4&",
+      "bars": [
+        "[E]",
+        "[B]",
+        "[B]",
+        "[Dbm]",
+        "[A]",
+        "[E]",
+        "[B]",
+        "[Dbm]",
+        "[A]",
+        "[E]",
+        "[B]",
+        "[Dbm]",
+        "[A]",
+        "[B]",
+        "[E]",
+        "[B]",
+        "[Dbm]",
+        "[A]",
+        "[E]",
+        "[B]",
+        "[Dbm]",
+        "[A]",
+        "[E]",
+        "[B]",
+        "[Dbm]",
+        "[A]",
+        "[B]"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Hey, Soul Sister(numbered,chords)",
+      "artist": "Train",
+      "timing": "4/4",
+      "bps": 10,
+      "strings": "GCEA",
+      "strumming": "1 2& &4&",
+      "bars": [
+        "01.[E]",
+        "02.[B]",
+        "03.[B]",
+        "04.[Dbm]",
+        "05.[A]",
+        "06.[E]",
+        "07.[B]",
+        "08.[Dbm]",
+        "09.[A]",
+        "10.[E]",
+        "11.[B]",
+        "12.[Dbm]",
+        "13.[A]",
+        "14.[B]",
+        "15.[E]",
+        "16.[B]",
+        "17.[Dbm]",
+        "18.[A]",
+        "19.[E]",
+        "20.[B]",
+        "21.[Dbm]",
+        "22.[A]",
+        "23.[E]",
+        "24.[B]",
+        "25.[Dbm]",
+        "26.[A]",
+        "27.[B]"
+      ]
+    }      
+  ]
 }
