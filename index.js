@@ -4,6 +4,33 @@ $(function() {
   var selected_song_index = 0;
   var selected_song_body = {};
   var selected_song_timeout = undefined;
+  var song_list = document.querySelector('jam-song-list');
+  var play_song = {};
+
+  console.log("after loading the song list");
+  function set_song_list(song_list_object) {
+    console.log("set song list");
+    if (song_list === undefined) {
+      song_list = song_list_object;
+    }
+    if (song_list !== undefined) {
+      song_list.hello();
+    } else {
+      console.log("song list not there");
+    }
+  }
+
+  function set_play_song(play_song_object) {
+    console.log("play song object");
+    if (play_song === undefined) {
+      play_song = play_song_object;
+    }
+    if (play_song !== undefined) {
+      play_song.hello();
+    } else {
+      console.log("play song not there");
+    }
+  }
 
   function select_song(index, content) {
     selected_song_index = index;
@@ -42,6 +69,7 @@ $(function() {
   // exports to parent
   parent.select_song = select_song;
   parent.play_one_song = play_one_song;
-  
+  parent.set_play_song = set_play_song;
+  parent.set_song_list = set_song_list;
 })
 

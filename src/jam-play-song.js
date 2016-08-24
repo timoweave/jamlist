@@ -45,7 +45,7 @@ Polymer({
     console.log("ready");
     this.get_all_song();
     this.get_one_song(this.song_id);
-
+    set_play_song(this);
     return;
 
     // var pages = Polymer.dom(this.root).querySelector('iron-pages');
@@ -68,6 +68,9 @@ Polymer({
       jam_play_song.song_body = data;
     });
   },
+  hello : function() {
+    console.log("hello there", this.song_id, this.song_api);
+  },
   get_all_song : function() {
     var jam_play_song = this;
     $.get(this.song_api, function(data) {
@@ -75,7 +78,7 @@ Polymer({
     });
   },
   attached: function() {
-    console.log(this.song_id, this.song_api, this.song_body);
+    // console.log("attached", this.song_id, this.song_api, this.song_body);
   },
   next_page: function() {
     
