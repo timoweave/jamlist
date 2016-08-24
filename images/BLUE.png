@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Content Blocked</title>
+<style>
+body{ font-family:arial,sans-serif; }
+.outerbox {margin-right:auto;margin-left:auto;text-align: center; width: 400px; border: 1px solid #CCC; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="outerbox">
+<h2>Your Request Was Disallowed</h2>
+<p>Your request matches one of our rules put in place to protect our
+customers. If you are a legitimate user please contact us via our website to
+have this incident investigated.</p><p>www.sli-systems.com</p>
+<p>ID:s1-4:56db0dcd-e0fb-4b45-a828-66a115619d64</p>
+</div>
+</body>
+</html>

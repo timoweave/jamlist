@@ -7,7 +7,6 @@ Polymer({
       observer: '_pageChanged'
     }
   },
-
   observers: [
     '_routePageChanged(routeData.page)'
   ],

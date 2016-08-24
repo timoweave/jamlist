@@ -10,14 +10,21 @@
 
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
-<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+
+<link rel="import" href="../bower_components/iron-icons/av-icons.html">
 <link rel="import" href="../bower_components/iron-icons/image-icons.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/iron-icons/social-icons.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
 
 <dom-module id="jam-song-list">
 
     <template>
 
-        <style>
+        <style is="custom-style" include="iron-flex iron-flex-alignment">
             :host {
             display: block;
             padding: 10px;
@@ -46,21 +53,47 @@
             margin: 16px 0;
             color: #212121;
             }
+            .paper-card {
+            background-color: lightcoral;
+            }
         </style>
 
         <div>
             <div class="card">
-                <paper-input name="search" label="search">
+                <paper-input value="{{search::input}}" label="search" >
                     <iron-icon icon="image:audiotrack" prefix></iron-icon>
                 </paper-input>
             </div>
-            
-            <template is="dom-repeat" items="{{song_list}}">
-                <div class="card" onclick="select_song({{index}})">
-                    <h2 >{{item.title}}, <small>{{item.artist}}</small></h2>
-                </div>
-            </template>
 
+            <div class="horizontal layout wrap" style="height:100%">
+                <template is="dom-repeat"
+                          items="{{song_list}}"
+                          filter="{{filter_list(search)}}" >
+                    <paper-card class="card flex-2 flex-grow" heading="{{item.title}}"
+                                image="images/flat_blue.jpg"
+                                    alt="{{item.title}}">
+                            <hr/>
+                            <div class="card-content">
+                                <p style="text-align: right;">{{item.artist}}</p>
+                            </div>
+                            <div class="card-actions">
+                                <paper-button>
+                                    <iron-icon icon="social:share"></iron-icon> 
+                                    <small>Share</small>
+                                </paper-button>
+                                <paper-button id="song-{{index}}" on-tap="tap_song">
+                                    <iron-icon icon="av:play-arrow"></iron-icon> 
+                                    <small>Play</small>
+                                </paper-button>
+                                <paper-button>
+                                    <iron-icon icon="icons:delete"></iron-icon> 
+                                    <small>Remove</small>
+                                    
+                                </paper-button>
+                            </div>
+                        </paper-card>
+                </template>
+            </div>
         </div>
     </template>
 

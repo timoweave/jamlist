@@ -20,7 +20,7 @@ $(function() {
     hilite_all_chords(500, bars);
     return;
   }
-  
+
   function hilite_all_chords(time_stepper, chords) {
     console.log("hilite_all_chords", time_stepper, chords);
     var time_line = time_stepper;
@@ -43,4 +43,5 @@ $(function() {
   parent.select_song = select_song;
   parent.play_one_song = play_one_song;
   
-});
+})
+

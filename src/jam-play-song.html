@@ -1,4 +1,4 @@
-<!--
+p<!--
 @license
 Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
 This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
@@ -11,13 +11,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../bower_components/iron-icons/av-icons.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/iron-swipeable-container/iron-swipeable-container.html">
 <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
 
 <dom-module id="jam-play-song">
 
   <template>
 
-    <style>
+      <style is="custom-style" include="iron-flex iron-flex-alignment">
       :host {
         display: block;
         padding: 10px;
@@ -56,25 +60,51 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       .hilitebar {
       background-color : lightblue !important;
       }
+      iron-pages {
+    width: 100%;
+    height: 50%;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+  }
+  iron-pages div {
+    width: 100%;
+    height: 50%;
+    padding: 80px 0;
+  }
     </style>
 
-    <div class="card">
-        <h1><iron-icon icon="av:play-circle-outline"
-                       onclick="play_one_song();"></iron-icon>
-            {{song_body.title}}
-        </h1>
+      <div class="layout horizontal wrap">
+        <paper-card class="card" style="width:94%;"
+                alt="{{song_body.title}}">
+            <h1>{{song_body.title}}</h1>
+
+            <div class="card-actions flex">
+                <paper-button class="flex" on-tap="prev_song">
+                    <iron-icon icon="av:skip-previous"></iron-icon> 
+                </paper-button>
+                <paper-button class="flex" on-tap="play_one_song()">
+                    <iron-icon icon="av:play-circle-outline" onclick="play_one_song();"></iron-icon> 
+                </paper-button>
+                <paper-button class="flex" on-tap="next_song">
+                    <iron-icon icon="av:skip-next"></iron-icon>                     
+                </paper-button>
+            </div>
+        </paper-card>
     </div>
 
     <div class="horizontal layout wrap">
         <template is="dom-repeat" items="{{song_body.bars}}">
+            
             <div class="card flex bar" id="bar-{{index}}" onclick="play_one_song({{index}})">
                 {{item}}
             </div>
+            
         </template>
     </div>
     
   </template>
-
+  
   <script src="../bower_components/jquery/dist/jquery.min.js"></script>  
   <script src="jam-play-song.js"></script>
 

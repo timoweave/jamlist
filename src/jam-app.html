@@ -74,7 +74,10 @@
             padding-left : 0.25em;
             padding-right : 0.75em;
             }
-            
+
+            .show-menu-icon {
+            display: inline-block !important;
+            }
         </style>
 
 
@@ -89,38 +92,57 @@
         <app-drawer-layout fullbleed>
 
             <!-- Drawer content -->
-            <app-drawer>
+            <app-drawer id="app_drawer_content">
                 <app-toolbar>
                     <iron-icon icon="image:music-note"> </iron-icon>
-                    Bar Menu
+                    Bar Key Menu
                 </app-toolbar>
 
                 <iron-selector selected="[[page]]" attr-for-selected="name"
-                               class="drawer-list" role="navigation">
+                               class="drawer-list layout horizontal wrap" role="navigation">
+
                     <a name="song-list" href="/song-list">
-                        <iron-icon icon="av:library-music"> </iron-icon>
-                        Song List
+                        <paper-button class="flex">
+                            <iron-icon icon="av:library-music"> </iron-icon>
+                            Song List
+                        </paper-button>
                     </a>
+
+                    
+                    <paper-button>
                     <a name="play-list" href="/play-list">
                         <iron-icon icon="av:playlist-play"></iron-icon>
                         Play List
                     </a>
+                    </paper-button>
+                    
+                    <paper-button>
                     <a name="play-song" href="/play-song">
                         <iron-icon icon="av:play-circle-outline"></iron-icon>
-                        Play Song
+                        Playback
                     </a>
+                    </paper-button>
+                    
+                    <paper-button>                    
                     <a name="setting" href="/setting">
                         <iron-icon icon="image:tune"></iron-icon>
-                        Settings
-                    </a>          
-                    <a name="user" href="/user">
-                        <iron-icon icon="av:recent-actors"></iron-icon>
-                        User Profile
+                        Setup
                     </a>
+                    </paper-button>
+                    
+                    <paper-button>
+                        <a name="user" href="/user">
+                            <iron-icon icon="av:recent-actors"></iron-icon>
+                            Profile
+                        </a>
+                    </paper-button>
+
+                    <paper-button>
                     <a name="login" href="/login">
                         <iron-icon icon="social:person"></iron-icon>
                         Login
                     </a>
+                    </paper-button>
                 </iron-selector>
             </app-drawer>
 
@@ -128,8 +150,9 @@
             <app-header-layout has-scrolling-region>
                 <app-header condenses reveals effects="waterfall">
                     <app-toolbar>
-                        <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-                        <div title>Bar List</div>
+                        <paper-icon-button icon="menu" drawer-toggle class="show-menu-icon">
+                        </paper-icon-button>
+                        <div title>Bar Key List</div>
                     </app-toolbar>
                 </app-header>
 
